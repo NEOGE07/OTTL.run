@@ -1,0 +1,24 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+
+processors:
+  transform:
+    log_statements:
+      - context: log
+        statements:
+          - set(attributes["environment"], "production")
+
+exporters:
+  debug:
+
+service:
+  pipelines:
+    logs:
+      receivers:
+        - otlp
+      processors:
+        - transform
+      exporters:
+        - debug

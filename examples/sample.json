@@ -1,0 +1,50 @@
+{
+  "resourceLogs": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "demo-service"
+            }
+          }
+        ]
+      },
+      "scopeLogs": [
+        {
+          "scope": {
+            "name": "demo"
+          },
+          "logRecords": [
+            {
+              "body": {
+                "stringValue": "Temperature detected"
+              },
+              "attributes": [
+                {
+                  "key": "environment",
+                  "value": {
+                    "stringValue": "test"
+                  }
+                },
+                {
+                  "key": "device",
+                  "value": {
+                    "stringValue": "machine-01"
+                  }
+                },
+                {
+                  "key": "temperature",
+                  "value": {
+                    "intValue": "75"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
